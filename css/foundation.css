@@ -72,6 +72,30 @@ img {
 .antialiased {
   -webkit-font-smoothing: antialiased; }
 
+  /* Add style for button */
+.VRbutton {
+  border: none;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: #2b2b2b;
+}
+
+  /* Add hover effect for button */
+.VRbutton:hover{
+  /* style="margin:15px; padding: 1px; text-align: center; font-size: 16px; border: 1px; background-color: white; color:#2b2b2b;" */
+  border: 2px solid white;
+  background-color: #2b2b2b;
+  color: white;
+  
+}
+
 img {
   display: inline-block;
   vertical-align: middle; }
