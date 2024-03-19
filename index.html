@@ -4,40 +4,45 @@
 <!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urban Design Streetscape Slider</title>
-  <link href="css/foundation.css" rel="stylesheet" type="text/css" />
-  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Design Streetscape Slider</title>
+    <link href="css/foundation.css" rel="stylesheet" type="text/css" />
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
 </head>
-  <body style="background-color: #2b2b2b">
+
+<body style="background-color: #2b2b2b">
     <div class="row" style="margin-top: 0.5em;">
-      <h4 style="margin-left:10px; color:#ababab;">Highlight of the Vision: </h4>
-      <p style="margin-left:10px; color:white;">Connecting neighborhoods with safe and slow streets for people and all modes of transportation.</p>
-      <div class="large-12 columns">
-        <div class="twentytwenty-container">
-          <img width="100%" src="img/safestreet_exst.jpg" />
-          <img width="100%" src="img/02_Safe and slow streets_IMAGE CREDIT_ Designed by SITELAB urban studio_CMG.jpg" />
+        <h4 style="margin-left:10px; color:#ababab;">Highlight of the Vision: </h4>
+        <p style="margin-left:10px; color:white;">Connecting neighborhoods with safe and slow streets for people and all modes of transportation.</p>
+        <div class="large-12 columns">
+            <div class="twentytwenty-container">
+                <img width="100%" src="img/safestreet_exst.jpg" />
+                <img width="100%" src="img/02_Safe and slow streets_IMAGE CREDIT_ Designed by SITELAB urban studio_CMG.jpg" />
+            </div>
+            <input class="VRbutton" type="button" value="Explore 360° VR Scene" onclick="window.open('https://www.arcgis.com/apps/360vr/index.html?id=ded0f9211fc24b0e8face9321d3f131b','_blank')" />
         </div>
-        <input class="VRbutton"  type="button" value="Explore 360° VR Scene" 
-        onclick="window.open('https://3dstreet.app/#/scenes/943f35e8-8064-4fb8-9588-80fe44cb76e2.json','_blank')" 
-        />
-      </div>
     </div>
 
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
     <script>
-    $(function(){
-      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-    });
+        $(function() {
+            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
+                default_offset_pct: 0.7
+            });
+            $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
+                default_offset_pct: 0.3,
+                orientation: 'vertical'
+            });
+        });
     </script>
-  </body>
+</body>
+
 </html>
